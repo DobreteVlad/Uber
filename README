@@ -1,0 +1,25 @@
+Copyright 2018 Vlad-Gabriel Dobrete (dobrete.vlad@yahoo.com)
+
+Pentru a rezolva task-urile din enunt, am creat 2 headere:
+ListGraph pentru a contoriza drumurile dintre 2 noduri.
+Hashtable pentru a putea jongla cu numele intersectiilor
+si pentru a le atribui chei unice.
+
+In primul task am initializat toate variabilele.
+Am adaugat toate intersectiile in Hashtable.
+Am creat muchiile dintre 2 noduri cu ListGraph.
+Am folosit functia de BFS pentru a putea afla daca exista drum.
+Initializand cu -1 distanta, daca nu exista, aceasta nu isi schimba valoarea.
+
+In al doilea task am aflat direct distanta cu functia BFS.
+Daca nu exista, ramane initializarea cu -1.
+
+In task-ul 3, am cautat in functie de prima comanda.
+Pentru k=0, adaug drum.
+Pentru k=1, sterg drumul.
+Pentru k=2, fac un drum bidirectional cu ajutorul functiei HasEdge.
+Daca nu exista drum, il fac bidirectional.
+Pentru k=3, inversesez drumul dintre 2 intersectii.
+Urmatoarele 2 Query-uri fac exact acelasi lucru cu task 1 si 2.
+Ultimul, afiseaza -1 daca nu exista drum intre una din capete si mijloc.
+Daca nu afiseaza -1, se afla distanta.
